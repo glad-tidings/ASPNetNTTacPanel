@@ -1,0 +1,72 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Slide.master.vb" Inherits="Pars_TC.Slide" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="rtl" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <link href="~/Styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/btn.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/master.css" rel="stylesheet" type="text/css" />
+    <link href="~/Styles/slideshow.css" rel="stylesheet" type="text/css" />
+
+    <script src="Scripts/mootools-core.js" type="text/javascript"></script>
+    <script src="Scripts/mootools-more.js" type="text/javascript"></script>
+    <script src="Scripts/browser-engines.js" type="text/javascript"></script>
+    <script src="Scripts/mootools-mobile.js" type="text/javascript"></script>
+    <script src="Scripts/roksprocket.js" type="text/javascript"></script>
+    <script src="Scripts/moofx.js" type="text/javascript"></script>
+    <script src="Scripts/features.js" type="text/javascript"></script>
+    <script src="Scripts/slideshow.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.addEvent('domready', function () {
+            RokSprocket.instances.slideshow = new RokSprocket.Slideshow();
+        });
+
+        window.addEvent('domready', function () {
+            RokSprocket.instances.slideshow.attach(163, '{"animation":"random","autoplay":"1","delay":"5"}');
+        });
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <script type="text/javascript" src="/Counter/?CID=1&amp;CAct=Counter" ></script>
+    <div id="banner">
+        <div id="header">
+            <asp:ContentPlaceHolder ID="MenuContent" runat="server"/>
+        </div>
+    </div>
+
+    <div id="page">
+		<div id="body">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		</div>
+	</div>
+
+    <div class="userpage">
+        <div class="userbody">
+            <div class="userleft">
+                <asp:ContentPlaceHolder ID="UserLeftContent" runat="server"/>
+            </div>
+            <div class="usermid">
+                <asp:ContentPlaceHolder ID="UserMidContent" runat="server"/>
+            </div>
+            <div class="userright">
+                <asp:ContentPlaceHolder ID="UserRightContent" runat="server"/>
+            </div>
+        </div>
+    </div>
+
+	<div id="footer">
+		<div>
+            <div class="rt-social-buttons">
+				<a style="margin-top:14px;margin-right:14px" class="social-button rt-facebook-btn" href="http://www.facebook.com/pars.tcco"></a>
+				<a style="margin-top:14px;margin-right:14px" class="social-button rt-twitter-btn" href="https://twitter.com/parstcco"></a>
+                <a style="margin-top:14px;margin-right:14px" class="social-button rt-google-btn" href="https://plus.google.com/110931207034399516018"></a>
+	            <a style="margin-top:14px;margin-right:14px" class="social-button rt-rss-btn" href="/RSS.aspx"></a>
+                <span> &copy; Copyright &copy; 2012. <a href="/">Pars-TC</a>. All Rights Reserved </span>
+            </div>
+		</div>
+	</div>
+</body>
+</html>

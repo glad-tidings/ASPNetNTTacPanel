@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{7EBFD845-79FA-465F-9BEC-E85B39788574}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Pars_TC</RootNamespace>
+    <AssemblyName>Pars-TC</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Pars-TC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Pars-TC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CuteWebUI.AjaxUploader, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\CuteWebUI.AjaxUploader.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\AdminManList.ascx" />
+    <Content Include="Admin\AdminNews.ascx" />
+    <Content Include="Admin\AdminsLogin.ascx" />
+    <Content Include="Admin\AdminsPanel.ascx" />
+    <Content Include="Admin\AllUsers.ascx" />
+    <Content Include="AV.ascx" />
+    <Content Include="AV.aspx" />
+    <Content Include="ContactUS.ascx" />
+    <Content Include="Counter\CounterInfo.ascx" />
+    <Content Include="Counter\Default.aspx" />
+    <Content Include="News\Default.aspx" />
+    <Content Include="Reseller\ResellerTickets.ascx" />
+    <Content Include="Reseller\ResellerServerInfo.ascx" />
+    <Content Include="RSS.aspx" />
+    <Content Include="SocialNetwork.ascx" />
+    <Content Include="Styles\news.css" />
+    <Content Include="Styles\ticket.css" />
+    <Content Include="Support\Default.aspx" />
+    <Content Include="UserMiddle.ascx" />
+    <Content Include="UserRight.ascx" />
+    <Content Include="FM\AddLink.ascx" />
+    <Content Include="FM\List.ascx" />
+    <Content Include="FM\Login.ascx" />
+    <Content Include="FM\Default.aspx" />
+    <Content Include="FM\RenameFile.ascx" />
+    <Content Include="FM\UploadFile.ascx" />
+    <Content Include="images\add_file.png" />
+    <Content Include="images\add_link.png" />
+    <Content Include="images\admin-add-reseller.png" />
+    <Content Include="images\admin-lo.png" />
+    <Content Include="images\admin-pn.png" />
+    <Content Include="images\backbtn.png" />
+    <Content Include="images\bg-body.jpg" />
+    <Content Include="images\bg-pattern.png" />
+    <Content Include="images\buttons.png" />
+    <Content Include="images\change-pass.png" />
+    <Content Include="images\conn.png" />
+    <Content Include="images\copy.png" />
+    <Content Include="images\cupbtn.png" />
+    <Content Include="images\de-down.jpg" />
+    <Content Include="images\de-error.jpg" />
+    <Content Include="images\de-up.jpg" />
+    <Content Include="images\de.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\devider.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\editbtn.png" />
+    <Content Include="images\en-down.jpg" />
+    <Content Include="images\en-error.jpg" />
+    <Content Include="images\en-up.jpg" />
+    <Content Include="images\endbtn.png" />
+    <Content Include="images\error-f.png" />
+    <Content Include="images\error.png" />
+    <Content Include="images\eset.png" />
+    <Content Include="images\findbtn.png" />
+    <Content Include="images\firstbtn.png" />
+    <Content Include="images\forwardbtn.png" />
+    <Content Include="images\icons.gif" />
+    <Content Include="images\loginbtn.png" />
+    <Content Include="images\logout.png" />
+    <Content Include="images\nl-down.jpg" />
+    <Content Include="images\nl-error.jpg" />
+    <Content Include="images\nl-up.jpg" />
+    <Content Include="images\nl.png" />
+    <Content Include="images\nobtn.png" />
+    <Content Include="images\question.png" />
+    <Content Include="images\sendbtn.png" />
+    <Content Include="images\upload.png" />
+    <Content Include="images\us-down.jpg" />
+    <Content Include="images\us-error.jpg" />
+    <Content Include="images\us-up.jpg" />
+    <Content Include="images\us.png" />
+    <Content Include="images\user-add.png" />
+    <Content Include="images\user-all.png" />
+    <Content Include="images\user-delete.png" />
+    <Content Include="images\user-disable.png" />
+    <Content Include="images\user-edit.png" />
+    <Content Include="images\user-enable.png" />
+    <Content Include="images\user-finish.png" />
+    <Content Include="images\user-on.png" />
+    <Content Include="images\user-report.png" />
+    <Content Include="images\user-start.png" />
+    <Content Include="images\yesbtn.png" />
+    <Content Include="images\zip.png" />
+    <Content Include="Language\fa-IR.xml" />
+    <Content Include="Reseller\ResellerOnlineUsers.ascx" />
+    <Content Include="Reseller\ResellerPassChange.ascx" />
+    <Content Include="Reseller\ResellerUserPassChange.ascx" />
+    <Content Include="Reseller\ResellerAllUsers.ascx" />
+    <Content Include="Reseller\ResellersLogin.ascx" />
+    <Content Include="Support\QuestList.ascx" />
+    <Content Include="Support\ErrorsList.ascx" />
+    <Content Include="Support\ErrorList.ascx" />
+    <Content Include="Admin\OnlineUsers.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Reseller\Default.aspx" />
+    <Content Include="Reseller\ResellersPanel.ascx" />
+    <Content Include="Scripts\browser-engines.js" />
+    <Content Include="Scripts\features.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\moofx.js" />
+    <Content Include="Scripts\mootools-core.js" />
+    <Content Include="Scripts\mootools-mobile.js" />
+    <Content Include="Scripts\mootools-more.js" />
+    <Content Include="Scripts\roksprocket.js" />
+    <Content Include="Scripts\slideshow.js" />
+    <Content Include="SlideShow.ascx" />
+    <Content Include="Styles\btn.css" />
+    <Content Include="Styles\master.css" />
+    <Content Include="Styles\slideshow.css" />
+    <Content Include="Styles\style.css" />
+    <Content Include="User\UserServerInfo.ascx" />
+    <Content Include="User\Default.aspx" />
+    <Content Include="User\UserReport.ascx" />
+    <Content Include="UserLeft.ascx" />
+    <Content Include="User\UserOnline.ascx" />
+    <Content Include="User\UserPanel.ascx" />
+    <Content Include="User\UserPassChange.ascx" />
+    <Content Include="Admin\UsersDelete.ascx" />
+    <Content Include="Admin\UsersEdit.ascx" />
+    <Content Include="User\UserSendTicket.ascx" />
+    <Content Include="User\UsersLogin.ascx" />
+    <Content Include="User\UserTickets.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminManList.ascx.designer.vb">
+      <DependentUpon>AdminManList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminManList.ascx.vb">
+      <DependentUpon>AdminManList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminNews.ascx.designer.vb">
+      <DependentUpon>AdminNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminNews.ascx.vb">
+      <DependentUpon>AdminNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminsLogin.ascx.designer.vb">
+      <DependentUpon>AdminsLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminsLogin.ascx.vb">
+      <DependentUpon>AdminsLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminsPanel.ascx.designer.vb">
+      <DependentUpon>AdminsPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminsPanel.ascx.vb">
+      <DependentUpon>AdminsPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AllUsers.ascx.designer.vb">
+      <DependentUpon>AllUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AllUsers.ascx.vb">
+      <DependentUpon>AllUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AV.ascx.designer.vb">
+      <DependentUpon>AV.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AV.ascx.vb">
+      <DependentUpon>AV.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AV.aspx.designer.vb">
+      <DependentUpon>AV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AV.aspx.vb">
+      <DependentUpon>AV.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ContactUS.ascx.designer.vb">
+      <DependentUpon>ContactUS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUS.ascx.vb">
+      <DependentUpon>ContactUS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Counter\CounterInfo.ascx.designer.vb">
+      <DependentUpon>CounterInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Counter\CounterInfo.ascx.vb">
+      <DependentUpon>CounterInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Counter\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Counter\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="News\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellerTickets.ascx.designer.vb">
+      <DependentUpon>ResellerTickets.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellerTickets.ascx.vb">
+      <DependentUpon>ResellerTickets.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellerServerInfo.ascx.designer.vb">
+      <DependentUpon>ResellerServerInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellerServerInfo.ascx.vb">
+      <DependentUpon>ResellerServerInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RSS.aspx.designer.vb">
+      <DependentUpon>RSS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RSS.aspx.vb">
+      <DependentUpon>RSS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="SocialNetwork.ascx.designer.vb">
+      <DependentUpon>SocialNetwork.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SocialNetwork.ascx.vb">
+      <DependentUpon>SocialNetwork.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMiddle.ascx.designer.vb">
+      <DependentUpon>UserMiddle.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserMiddle.ascx.vb">
+      <DependentUpon>UserMiddle.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRight.ascx.designer.vb">
+      <DependentUpon>UserRight.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRight.ascx.vb">
+      <DependentUpon>UserRight.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FM\AddLink.ascx.designer.vb">
+      <DependentUpon>AddLink.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FM\AddLink.ascx.vb">
+      <DependentUpon>AddLink.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FM\List.ascx.designer.vb">
+      <DependentUpon>List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FM\List.ascx.vb">
+      <DependentUpon>List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FM\Login.ascx.designer.vb">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FM\Login.ascx.vb">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FM\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FM\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FM\RenameFile.ascx.designer.vb">
+      <DependentUpon>RenameFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FM\RenameFile.ascx.vb">
+      <DependentUpon>RenameFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FM\UploadFile.ascx.designer.vb">
+      <DependentUpon>UploadFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FM\UploadFile.ascx.vb">
+      <DependentUpon>UploadFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellerOnlineUsers.ascx.designer.vb">
+      <DependentUpon>ResellerOnlineUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellerOnlineUsers.ascx.vb">
+      <DependentUpon>ResellerOnlineUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellerPassChange.ascx.designer.vb">
+      <DependentUpon>ResellerPassChange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellerPassChange.ascx.vb">
+      <DependentUpon>ResellerPassChange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellerUserPassChange.ascx.designer.vb">
+      <DependentUpon>ResellerUserPassChange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellerUserPassChange.ascx.vb">
+      <DependentUpon>ResellerUserPassChange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellerAllUsers.ascx.designer.vb">
+      <DependentUpon>ResellerAllUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellerAllUsers.ascx.vb">
+      <DependentUpon>ResellerAllUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellersLogin.ascx.designer.vb">
+      <DependentUpon>ResellersLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellersLogin.ascx.vb">
+      <DependentUpon>ResellersLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\QuestList.ascx.designer.vb">
+      <DependentUpon>QuestList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\QuestList.ascx.vb">
+      <DependentUpon>QuestList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Support\ErrorsList.ascx.designer.vb">
+      <DependentUpon>ErrorsList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\ErrorsList.ascx.vb">
+      <DependentUpon>ErrorsList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DBConnection.vb" />
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Encrypt.vb" />
+    <Compile Include="Support\ErrorList.ascx.designer.vb">
+      <DependentUpon>ErrorList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Support\ErrorList.ascx.vb">
+      <DependentUpon>ErrorList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Admin\OnlineUsers.ascx.designer.vb">
+      <DependentUpon>OnlineUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OnlineUsers.ascx.vb">
+      <DependentUpon>OnlineUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reseller\ResellersPanel.ascx.designer.vb">
+      <DependentUpon>ResellersPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reseller\ResellersPanel.ascx.vb">
+      <DependentUpon>ResellersPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slide.Master.designer.vb">
+      <DependentUpon>Slide.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Slide.Master.vb">
+      <DependentUpon>Slide.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SlideShow.ascx.designer.vb">
+      <DependentUpon>SlideShow.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="SlideShow.ascx.vb">
+      <DependentUpon>SlideShow.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tools.vb" />
+    <Compile Include="User\UserServerInfo.ascx.designer.vb">
+      <DependentUpon>UserServerInfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserServerInfo.ascx.vb">
+      <DependentUpon>UserServerInfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="User\UserReport.ascx.designer.vb">
+      <DependentUpon>UserReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserReport.ascx.vb">
+      <DependentUpon>UserReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserLeft.ascx.designer.vb">
+      <DependentUpon>UserLeft.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLeft.ascx.vb">
+      <DependentUpon>UserLeft.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserOnline.ascx.designer.vb">
+      <DependentUpon>UserOnline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserOnline.ascx.vb">
+      <DependentUpon>UserOnline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserPanel.ascx.designer.vb">
+      <DependentUpon>UserPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserPanel.ascx.vb">
+      <DependentUpon>UserPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserPassChange.ascx.designer.vb">
+      <DependentUpon>UserPassChange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserPassChange.ascx.vb">
+      <DependentUpon>UserPassChange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UsersDelete.ascx.designer.vb">
+      <DependentUpon>UsersDelete.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UsersDelete.ascx.vb">
+      <DependentUpon>UsersDelete.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UsersEdit.ascx.designer.vb">
+      <DependentUpon>UsersEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UsersEdit.ascx.vb">
+      <DependentUpon>UsersEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserSendTicket.ascx.designer.vb">
+      <DependentUpon>UserSendTicket.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserSendTicket.ascx.vb">
+      <DependentUpon>UserSendTicket.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UsersLogin.ascx.designer.vb">
+      <DependentUpon>UsersLogin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UsersLogin.ascx.vb">
+      <DependentUpon>UsersLogin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserTickets.ascx.designer.vb">
+      <DependentUpon>UserTickets.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserTickets.ascx.vb">
+      <DependentUpon>UserTickets.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Slide.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebControlCaptcha\WebControlCaptcha.vbproj">
+      <Project>{03D1C790-162A-4AC0-B33B-634B263C0A63}</Project>
+      <Name>WebControlCaptcha</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FM\Files\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23973</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<root>
+  
+  <General>
+    <Dir>rtl</Dir>
+  </General>
+
+  <User>
+    <Login-Username>نام کاربری : </Login-Username>
+    <Login-Password>کلمه عبور : </Login-Password>
+    <Login-Captcha>کد امنیتی : </Login-Captcha>
+    <Login-Button>ورود</Login-Button>
+    <Login-Error-Enter-Username>لطفا نام کاربری را وارد کنید</Login-Error-Enter-Username>
+    <Login-Error-Enter-Password>لطفا کلمه عبور را وارد کنید</Login-Error-Enter-Password>
+    <Login-Error-Wrong-Username-Password>نام کاربری یا کلمه عبور اشتباه است</Login-Error-Wrong-Username-Password>
+  </User>
+
+</root>

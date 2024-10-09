@@ -1,0 +1,101 @@
+#rt-slideshow {
+  position: relative;
+}
+#rt-slideshow .rt-slideshow-left-top {
+  background-repeat: no-repeat;
+  height: 32px;
+  width: 110px;
+  position: absolute;
+  z-index: 5;
+  top: -17px;
+}
+#rt-slideshow .rt-slideshow-left-btm {
+  background-repeat: no-repeat;
+  height: 46px;
+  width: 110px;
+  position: absolute;
+  z-index: 5;
+  bottom: -22px;
+  background-position: 0 100%;
+}
+#rt-slideshow .rt-slideshow-left-mid {
+  background-repeat: repeat-y;
+  background-position: 100% 0;
+  top: 0;
+  bottom: -22px;
+  width: 110px;
+  position: absolute;
+  z-index: 5;
+}
+#rt-slideshow .rt-slideshow-right-mid {
+  background-repeat: repeat-y;
+  background-position: 100% 0;
+  top: 0;
+  bottom: -22px;
+  width: 110px;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+}
+#rt-slideshow .rt-slideshow-right-top {
+  background-repeat: no-repeat;
+  height: 45px;
+  width: 110px;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  top: -18px;
+}
+#rt-slideshow .rt-slideshow-right-btm {
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  height: 61px;
+  width: 110px;
+  position: absolute;
+  right: 0;
+  z-index: 5;
+  bottom: -23px;
+}
+#rt-slideshow .rt-slideshow-top {
+  height: 43px;
+  left: 0;
+  right: 0;
+  top: -16px;
+  position: absolute;
+  z-index: 5;
+  margin: 0 110px;
+}
+#rt-slideshow .rt-slideshow-btm {
+  height: 60px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 5;
+  margin: 0 110px;
+  bottom: -22px;
+  background-repeat: no-repeat;
+}
+.layout-slideshow .sprocket-features-arrows .arrow {
+  background-color: #212121;
+  background-image: url(../images/nav-arrows.png);
+}
+.layout-slideshow .readon {
+  border-color: #ffffff;
+  background-color: transparent;
+}
+.sprocket-features-pagination li.active {
+  background-color: #ffffff;
+}
+.sprocket-features-pagination li {
+  background-color: #ffffff;
+}
+.sprocket-features-content {
+  background: rgba(0,0,0,0.8);
+  color: #ffffff;
+}
+.sprocket-features-title a {
+  color: #ffffff;
+}
+#rt-page-surround {
+  overflow: hidden;
+}

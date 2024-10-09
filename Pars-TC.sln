@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Pars-TC", "Pars-TC\Pars-TC.vbproj", "{7EBFD845-79FA-465F-9BEC-E85B39788574}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebControlCaptcha", "WebControlCaptcha\WebControlCaptcha.vbproj", "{03D1C790-162A-4AC0-B33B-634B263C0A63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EBFD845-79FA-465F-9BEC-E85B39788574}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBFD845-79FA-465F-9BEC-E85B39788574}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBFD845-79FA-465F-9BEC-E85B39788574}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBFD845-79FA-465F-9BEC-E85B39788574}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03D1C790-162A-4AC0-B33B-634B263C0A63}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{03D1C790-162A-4AC0-B33B-634B263C0A63}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{03D1C790-162A-4AC0-B33B-634B263C0A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03D1C790-162A-4AC0-B33B-634B263C0A63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,67 @@
+/**
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+/* Features - Layout Slideshow - Core */
+.layout-slideshow {position: relative;}
+.layout-slideshow:after {display: table;content: "";*zoom: 1;clear: both;}
+.layout-slideshow ul {list-style: none !important;margin: 0;padding: 0;}
+
+/* Features - Layout Slideshow - Content */
+.layout-slideshow .sprocket-features-img-list {position: relative;overflow: hidden;}
+.layout-slideshow .sprocket-features-img-container {position: absolute;top: 0;}
+.layout-slideshow .sprocket-features-img-container img {width: 100%;}
+.layout-slideshow .sprocket-features-img-container a {line-height: 0;}
+.layout-slideshow .sprocket-features-content {position: absolute;top: 350px;left: 10px;width: 275px;}
+.layout-slideshow .sprocket-features-title {font-size: 2em;font-weight: normal;line-height: 1em;margin: 0;padding: 10px;display: inline-block;}
+.layout-slideshow .sprocket-features-title a {font-size: 1em;line-height: 1em;font-weight: normal;}
+.layout-slideshow .sprocket-features-desc {font-size: 1.1em;line-height: 1.3em;margin: 0;padding: 10px;display: inline-block;}
+.sprocket-features-content-top {height: 25px;width: 275px;background-position: 100% 0;background-repeat: no-repeat;margin-top: -25px}
+.sprocket-features-content-bottom {height: 13px;width: 275px;background-position: 100% 100%;background-repeat: no-repeat;margin-bottom: -13px;}
+.layout-slideshow .readon {margin: 10px;border: 1px solid;}
+.layout-slideshow .readon:hover {border-color: transparent;}
+
+/* Features - Layout Slideshow - Enable First Item */
+.layout-slideshow .sprocket-features-index-1 .sprocket-features-img-container {position: relative;}
+.layout-slideshow .sprocket-features-index-1 .sprocket-features-content, .layout-slideshow .sprocket-features-index-1 .sprocket-features-img-container {z-index: 3;}
+
+/* Features - Layout Slideshow - Navigation */
+.layout-slideshow .sprocket-features-arrows .arrow span {display: none;}
+.layout-slideshow .sprocket-features-arrows .arrow {position: absolute;display: block;width: 34px;height: 34px;margin-top: -12px;cursor: pointer;z-index: 10;text-align: center;font-size: 2.2em;background-repeat: no-repeat;right: 10px;}
+.layout-slideshow .sprocket-features-arrows .prev {top: 124px;background-position: 12px 8px;}
+.layout-slideshow .sprocket-features-arrows .next {top: 158px;background-position: 13px -132px;}
+.arrows-onhover .sprocket-features-arrows .arrow {opacity: 0;}
+.sprocket-features.arrows-onhover:hover .sprocket-features-arrows .arrow {opacity: 1;}
+.layout-slideshow .sprocket-features-pagination {position: absolute;right: 10px;top: 10px;z-index: 10;width: 34px;}
+.layout-slideshow .sprocket-features-pagination li {display: inline-block;text-align: center;opacity: 0.4;cursor: pointer;width: 34px;height: 34px;}
+.layout-slideshow .sprocket-features-pagination li.active {opacity: 1;}
+.layout-slideshow .sprocket-features-pagination li:hover {opacity: 0.7;}
+.layout-slideshow .sprocket-features-pagination li span {font-size: 1.2em;line-height: 1em;display: block;padding-top: 10px;}
+.layout-slideshow .sprocket-features-pagination-hidden {display: none;}
+
+/* Features - Layout Slideshow - Transitions */
+.layout-slideshow .sprocket-features-pagination li {-webkit-transition: opacity 0.2s ease-in;-moz-transition: opacity 0.2s ease-in;-o-transition: opacity 0.2s ease-in;-ms-transition: opacity 0.2s ease-in;transition: opacity 0.2s ease-in;}
+.layout-slideshow .sprocket-features-arrows .arrow {-webkit-transition: background-color 0.1s ease-in;-moz-transition: background-color 0.1s ease-in;-o-transition: background-color 0.1s ease-in;-ms-transition: background-color 0.1s ease-in;transition: background-color 0.1s ease-in;}
+
+/* Features - Layout Slideshow - Overlay */
+#rt-slideshow .layout-slideshow .rt-slideshow-overlay {position: absolute;z-index: 2;top: 0;bottom: 0;width: 785px;margin: 0 110px;background-repeat: repeat-y;}
+#rt-slideshow .layout-slideshow .rt-slideshow-overlay2 {position: absolute;z-index: 2;top: 0;bottom: 0;right: 0;width: 393px;margin: 0 110px;background-repeat: repeat-y;}
+.main-mask-none .rt-slideshow-overlay, .main-mask-none .rt-slideshow-overlay2 {display: none !important;}
+
+/* Masks */
+.main-mask-fold .sprocket-features-content-top, .main-mask-fold .sprocket-features-content-bottom, .main-mask-pointed .sprocket-features-content-top, .main-mask-pointed .sprocket-features-content-bottom {display: none;}
+.main-mask-fold .layout-slideshow .sprocket-features-content {bottom: 53px;top: inherit;left: 0;width: 100%;padding: 25px 30px 8px;}
+.main-mask-fold .layout-slideshow .sprocket-features-title {float: left;}
+.main-mask-fold .layout-slideshow .sprocket-features-desc {float: left;width: 35%;}
+.main-mask-fold .layout-slideshow .readon {float: left;}
+.main-mask-fold .layout-slideshow .sprocket-features-pagination, .main-mask-fold .layout-slideshow .sprocket-features-arrows .arrow {right: 0;}
+.main-mask-fold #rt-slideshow .layout-slideshow .rt-slideshow-overlay {width: 159px;margin: 0 0 0 80px;top: -2px;bottom: 8px;}
+.main-mask-fold #rt-slideshow .layout-slideshow .rt-slideshow-overlay2 {width: 159px;margin: 0 80px 0 0;top: -2px;background-repeat: no-repeat;bottom: 8px;}
+.main-mask-pointed .layout-slideshow .sprocket-features-content {left: 0;top: 0;bottom: 6px;}
+.main-mask-pointed .layout-slideshow .sprocket-features-desc, .main-mask-pointed .layout-slideshow .sprocket-features-title {padding: 10px 35px;}
+.main-mask-pointed .layout-slideshow .readon {margin: 10px 35px;}
+.main-mask-pointed #rt-slideshow .layout-slideshow .rt-slideshow-overlay {width: 240px;margin: 0 0 0 300px;top: -2px;bottom: 6px;}
+.main-mask-pointed #rt-slideshow .layout-slideshow .rt-slideshow-overlay2 {width: 137px;margin: 0 78px 0 0;top: -29px;background-repeat: no-repeat;bottom: 8px;}
+.main-mask-pointed .layout-slideshow .sprocket-features-arrows .prev, .main-mask-pointed .layout-slideshow .sprocket-features-arrows .next, .main-mask-pointed .layout-slideshow .sprocket-features-pagination {right: 0;}
+.main-mask-pointed .layout-slideshow .sprocket-features-content {width: 300px;}

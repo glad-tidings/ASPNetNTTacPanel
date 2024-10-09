@@ -1,0 +1,14 @@
+﻿.NewsTitle {
+    color: #006182;
+    font-size: 14px;
+}
+.NewsTitle:hover {
+    color: #003345;
+}
+.NewsAuth {
+    color: #8d8d8d;
+    font-size: 12px;
+}
+.NewsDesc {
+    text-align: justify;
+}

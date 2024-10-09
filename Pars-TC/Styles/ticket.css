@@ -1,0 +1,74 @@
+﻿.TicketSender {
+    background: url(../images/head_box.png) no-repeat right top;
+    height: 25px;
+    width: 178px;
+    line-height: 25px;
+    text-align: center;
+}
+.TicketDate {
+    height:25px;
+    line-height: 20px;
+    text-align: left;
+}
+.TicketDesc {
+	-moz-border-radius-bottomleft : 4px;
+	-moz-border-radius-bottomright : 4px;
+	padding : 5px 10px;
+	border : #95ceed solid 1px;
+	background-color : #fbfbfb;
+	margin-bottom : 10px;
+    text-align: justify;
+    font-family: Tahoma;
+}
+.TicketHeader {
+    background: #ffffff url(../images/box_pat.png) repeat-x right bottom;
+}
+.SpanTicketInfo {
+    font-weight: bold;
+    padding-right: 5px;
+}
+.TrTicketInfo {
+    height: 25px;
+}
+.TrTicketListHead {
+    height: 22px;
+    background-color: #8a9fb6;
+    display: table-row;
+}
+.TdTicketInfo {
+    width: 100px;
+    text-align: left;
+}
+.TableTicket {
+    width: 100%;
+    font-size: 9pt;
+    border-collapse: collapse;
+    border: 0;
+}
+.DivTicket {
+    width: 100%;
+    font-size: 10pt;
+    display: table;
+}
+.TextAreaTicketSend {
+    width: 99%;
+    height: 300px;
+    resize: none;
+}
+.TdTicketSend {
+    padding-left: 5px;
+    vertical-align: top;
+    text-align: left;
+}
+.DDListTicketSend {
+    width: 250px;
+    font-family: Tahoma;
+}
+.InputTicketSend {
+    width: 250px;
+    font-family: Tahoma;
+}
+.TrTicketSend {
+    height: 30px;
+    vertical-align: top;
+}
